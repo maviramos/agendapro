@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Digital Escolar</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Agenda Digital Escolar</h1>
+  <div id="calendar"></div>
+
+  <div id="eventModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle">Adicionar/Editar Evento</h2>
+      <form id="eventForm">
+        <label for="eventTitle">Título:</label>
+        <input type="text" id="eventTitle" required>
+
+        <label for="eventDate">Data:</label>
+        <input type="date" id="eventDate" required>
+
+        <button type="submit" id="saveButton">Salvar</button>
+        <button type="button" id="deleteButton" style="display:none;">Excluir</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
